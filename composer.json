@@ -1,0 +1,17 @@
+{
+    "name": "user/products_store",
+    "autoload": {
+        "psr-4": {
+            "User\\ProductsStore\\": "src/",
+            "Libs\\": "_classes/Libs",
+            "Helpers\\": "_classes/Helpers"
+        }
+    },
+    "authors": [
+        {
+            "name": "zawminhein",
+            "email": "zawminheinmp@gmail.com"
+        }
+    ],
+    "require": {}
+}
