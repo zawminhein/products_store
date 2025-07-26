@@ -18,6 +18,12 @@ try {
     $user = $table->loginUser($data);
     
     if ($user) {
+        if($user->role == 'admin') {
+            session_start();
+            $_SESSION['user'] = $user;
+            HTTP::redirect('/admin.php');
+            exit();
+        }
         session_start();
         $_SESSION['user'] = $user;
         HTTP::redirect('/index.php');
